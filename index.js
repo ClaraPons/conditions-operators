@@ -98,10 +98,10 @@
 // }
 
 // 07 - Rounded but better
-let roundedNumber = 3.8
+let roundedNumber = 12.4 
 
-if (roundedNumber < 3.5){
+if (roundedNumber - (Math.floor(roundedNumber)) <= 0.5){
     console.log(Math.floor(roundedNumber))
-}else if (roundedNumber >= 3.5){
+}else {
     console.log(Math.ceil(roundedNumber))
 }
