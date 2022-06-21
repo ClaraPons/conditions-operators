@@ -98,10 +98,38 @@
 // }
 
 // 07 - Rounded but better
-let roundedNumber = 12.4 
+// let roundedNumber = 12.4 
 
-if (roundedNumber - (Math.floor(roundedNumber)) <= 0.5){
+// if (roundedNumber - (Math.floor(roundedNumber)) <= 0.5){
+//     console.log(Math.floor(roundedNumber))
+// }else {
+//     console.log(Math.ceil(roundedNumber))
+// }
+
+// 08 - Rounded but better, Méthode 2
+// let roundedNumber = 12.4
+// let roundedString = roundedNumber.toString()
+// let roundedIndex = roundedString.indexOf(".") + 1
+// let roundedIndexBis = roundedIndex + 1
+// let roundedSub = roundedString.substring(roundedIndex, roundedIndexBis)
+// console.log(roundedIndexBis)
+
+// if (roundedSub < 5) {
+//     console.log(Math.floor(roundedNumber))
+// }
+// else {
+//     console.log(Math.ceil(roundedNumber))
+// }
+
+// 09 - Rounded but better, Méthode 3
+ let roundedNumber = 12.6
+ let roundedString = roundedNumber.toString()
+ let roundedSplit = roundedString.split('.')
+ let roundedArray = roundedSplit[1]
+
+if (roundedArray < 5) {
     console.log(Math.floor(roundedNumber))
-}else {
+}
+else {
     console.log(Math.ceil(roundedNumber))
 }
