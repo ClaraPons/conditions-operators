@@ -109,12 +109,13 @@
 
 
 // 09 - Rounded but better, Méthode 3
-//  const roundedNumber = 12.6
+//  const roundedNumber = 12.2
 //  const roundedString = roundedNumber.toString()
 //  const roundedSplit = roundedString.split('.')
-//  const roundedArray = roundedSplit[1]
+//  const roundedArray = roundedSplit[1].charAt(0)
+// const decimal = Number(roundedArray)
 
-// if (roundedArray < 5) {
+// if (decimal < 5) {
 //     console.log(Math.floor(roundedNumber))
 // }
 // else {
