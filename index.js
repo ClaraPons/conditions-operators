@@ -11,7 +11,7 @@
 
 // 02 - Condition
 // const limit = 50
-// let score = 44
+// const score = 44
 
 // if (score >= limit){
 //     console.log("Ok good !")
@@ -30,12 +30,14 @@
 
 // 04 - Condition III
 // const limit = 50
-// let score = 64
+// const score = 64
 // const password = "azerty"
+// let passedTest =  score >= limit
+// let isPasswordSecured = password.length >= 5
 
-// if ((score >= limit) && (password.length >= 5)){
+// if (passedTest && isPasswor'dSecured){
 //     console.log("Everything is cool !")
-// }else if ((score >= limit) || (password.length >= 5)){
+// }else if (passedTest || isPasswordSecured){
 //     console.log("Something is cool !")
 // }else{
 //     console.log("Nothing is cool !")
@@ -54,82 +56,67 @@
 // }
 
 // 06 - Month
-// let month = "Dld,e,mber"
+// const month = "Dld,e,mber"
 
 // switch (month) {
-//     case "January": 
+//     case "December": case "January": case "February":
 //         console.log("Winter")
 //         break
-//     case "February": 
-//         console.log("Winter")
-//         break
-//     case "March": 
+//     case "March": case "April": case "May":
 //         console.log("Spring")
 //         break
-//     case "April": 
-//         console.log("Spring")
-//         break
-//     case "May": 
-//         console.log("Spring")
-//         break
-//     case "June": 
+//     case "June": case "July": case "August": 
 //         console.log("Summer")
 //         break
-//     case "July": 
-//         console.log("Summer")
-//         break
-//     case "August": 
-//         console.log("Summer")
-//         break
-//     case "September": 
+//     case "September": case "October": case "November":
 //         console.log("Fall")
-//         break
-//     case "October": 
-//         console.log("Fall")
-//         break
-//     case "November": 
-//         console.log("Fall")
-//         break
-//     case "December": 
-//         console.log("Winter")
 //         break
 //     default: 
 //         console.log("This isn't a month")
 // }
 
 // 07 - Rounded but better
-// let roundedNumber = 12.4 
+// const roundedNumber = 12.7
+// const delta = roundedNumber - Math.floor(roundedNumber)
+// if (delta <= 0.5){
+//     console.log(Math.floor(roundedNumber))
+// }else {
+//     console.log(Math.ceil(roundedNumber))
+// }
 
-// if (roundedNumber - (Math.floor(roundedNumber)) <= 0.5){
+// const roundedNumber = 12.7
+// const delta = Math.floor(roundedNumber) + 0.5
+// if (roundedNumber <= delta){
 //     console.log(Math.floor(roundedNumber))
 // }else {
 //     console.log(Math.ceil(roundedNumber))
 // }
 
 // 08 - Rounded but better, Méthode 2
-// let roundedNumber = 12.4
-// let roundedString = roundedNumber.toString()
-// let roundedIndex = roundedString.indexOf(".") + 1
-// let roundedIndexBis = roundedIndex + 1
-// let roundedSub = roundedString.substring(roundedIndex, roundedIndexBis)
-// console.log(roundedIndexBis)
+// const roundedNumber = 12.22
+// const roundedString = roundedNumber.toString()
+// const index = roundedString.indexOf(".") + 1
+// let roundedSub = roundedString.substring(index, index + 1)
+// roundedSub = Number(roundedSub)
+// console.log(typeof(roundedSub))
 
-// if (roundedSub < 5) {
+// if (roundedSub <= 5) {
 //     console.log(Math.floor(roundedNumber))
 // }
 // else {
 //     console.log(Math.ceil(roundedNumber))
 // }
 
-// 09 - Rounded but better, Méthode 3
- let roundedNumber = 12.6
- let roundedString = roundedNumber.toString()
- let roundedSplit = roundedString.split('.')
- let roundedArray = roundedSplit[1]
 
-if (roundedArray < 5) {
-    console.log(Math.floor(roundedNumber))
-}
-else {
-    console.log(Math.ceil(roundedNumber))
-}
+// 09 - Rounded but better, Méthode 3
+//  const roundedNumber = 12.6
+//  const roundedString = roundedNumber.toString()
+//  const roundedSplit = roundedString.split('.')
+//  const roundedArray = roundedSplit[1]
+
+// if (roundedArray < 5) {
+//     console.log(Math.floor(roundedNumber))
+// }
+// else {
+//     console.log(Math.ceil(roundedNumber))
+// }
